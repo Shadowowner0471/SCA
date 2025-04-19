@@ -11,7 +11,7 @@ from keep_alive import live
 fake = Faker()
 
 def luhn_algorithm(card_number):
-    digits = [int(d] for d in str(card_number) if d.isdigit()]
+    digits = [int(d) for d in str(card_number) if d.isdigit()]
     for i in range(len(digits) - 2, -1, -2):
         digits[i] *= 2
         if digits[i] > 9:
